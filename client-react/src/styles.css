@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card { @apply bg-slate-900/70 backdrop-blur border border-slate-800 rounded-2xl p-5 shadow-xl; }
+.btn  { @apply px-4 py-2 rounded-xl font-semibold bg-emerald-500 hover:bg-emerald-400 active:scale-95 transition; }
+.btn-secondary { @apply px-4 py-2 rounded-xl font-semibold bg-slate-800 hover:bg-slate-700 transition; }
+.input{ @apply w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-500; }
+.link { @apply text-emerald-400 hover:text-emerald-300; }
+.nav  { @apply sticky top-0 z-20 bg-slate-950/80 backdrop-blur border-b; }
+
+.toast { @apply fixed right-4 bottom-4 space-y-2 z-50; }
+.toast-item { @apply bg-slate-900 border border-emerald-700/40 rounded-xl px-4 py-3 shadow-xl; }
+.skeleton { @apply animate-pulse bg-slate-800 rounded-lg; }
