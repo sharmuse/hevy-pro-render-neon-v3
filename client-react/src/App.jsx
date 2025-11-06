@@ -1,14 +1,20 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+// client-react/src/App.jsx
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Nav from "./components/Nav"
+import Dashboard from "./pages/Dashboard"
+import Alunos from "./pages/Alunos"
+import "./styles.css"
+
 export default function App(){
   return (
-    <main className="max-w-3xl mx-auto py-16 px-6">
-      <motion.h1 initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} transition={{duration:0.4}} className="text-2xl font-bold">
-        Hevy Pro — Frontend OK ✅
-      </motion.h1>
-      <p className="mt-3 opacity-80">
-        Scaffold mínimo para validar build na Vercel.
-      </p>
-    </main>
+    <BrowserRouter>
+      <div className="min-h-screen bg-slate-950 text-slate-100">
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/alunos" element={<Alunos />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   )
 }
