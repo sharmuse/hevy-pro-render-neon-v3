@@ -1,6 +1,5 @@
 {
   "name": "team-araujo-hevy-pro-client",
-  "private": true,
   "version": "0.2.0",
   "type": "module",
   "scripts": {
@@ -23,4 +22,3 @@
     "@vitejs/plugin-react": "^4.3.2"
   }
 }
-
