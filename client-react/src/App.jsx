@@ -1,12 +1,11 @@
 import { BrowserRouter, Routes, Route, useNavigate, useLocation } from "react-router-dom"
 import { useEffect, useState } from "react"
 import Nav from "./components/Nav"
-import Dashboard from "./pages/Dashboard"
-import Alunos from "./pages/Alunos"
-import Treinos from "./pages/Treinos"
-import Notificacoes from "./pages/Notificacoes"
-import Conta from "./pages/Conta"
-
+import Dashboard     from "./pages/Dashboard.jsx";
+import Alunos        from "./pages/Alunos.jsx";
+import Treinos       from "./pages/Treinos.jsx";
+import Notificacoes  from "./pages/Notificacoes.jsx";
+import Conta         from "./pages/Conta.jsx";
 function Shell() {
   const location = useLocation()
   const navigate = useNavigate()
