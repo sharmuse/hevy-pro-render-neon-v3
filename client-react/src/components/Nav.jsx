@@ -1,12 +1,7 @@
-// client-react/src/components/Nav.jsx
 import { motion } from "framer-motion"
 import { Users, Dumbbell, Bell, Gauge, User } from "lucide-react"
-// Se quiser que os cliques mudem a rota automaticamente, descomente a linha abaixo
-// import { useNavigate } from "react-router-dom"
 
 export default function Nav({ tab, setTab }) {
-  // const navigate = useNavigate()
-
   const tabs = [
     ["dashboard", "Dashboard", Gauge],
     ["students", "Alunos", Users],
@@ -26,11 +21,7 @@ export default function Nav({ tab, setTab }) {
           {tabs.map(([k, label, Icon]) => (
             <button
               key={k}
-              onClick={() => {
-                setTab(k)
-                // Se quiser navegar pela rota, descomente:
-                // k === "dashboard" ? navigate("/") : navigate(`/${k}`)
-              }}
+              onClick={() => setTab(k)}
               className={`relative px-3 py-2 rounded-xl flex items-center gap-2 ${
                 tab === k
                   ? "text-emerald-300"
